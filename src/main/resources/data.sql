@@ -1,5 +1,5 @@
 -- Insert 10 students
-INSERT INTO student (id, name, email) VALUES (1, 'Udit Nayak', 'udit.nayak@example.com');
+INSERT INTO student (id, name, email) VALUES (1, 'Arjun Kshirsagar', 'arjun.kshirsagar@example.com');
 INSERT INTO student (id, name, email) VALUES (2, 'Priya Patel', 'priya.patel@example.com');
 INSERT INTO student (id, name, email) VALUES (3, 'Vikram Singh', 'vikram.singh@example.com');
 INSERT INTO student (id, name, email) VALUES (4, 'Neha Gupta', 'neha.gupta@example.com');

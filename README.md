@@ -1,32 +1,69 @@
-# 📘 Enroll-Mate
+# Enroll Mate
 
-**Enroll-Mate** is a Spring MVC web application designed to manage student-course enrollment. It provides an intuitive UI to perform CRUD operations on students and courses, and view their relationships.
-
----
-
-## 🛠️ Prerequisites
-
-Make sure the following are installed on your system:
-
-- **Java 21**
-- **Maven**
-- **IntelliJ IDEA**
+**Enroll Mate** is a comprehensive Spring MVC web application that simplifies student-course enrollment management in academic institutions. It provides an intuitive user interface for administrators to manage academic records efficiently through complete CRUD operations.
 
 ---
 
-## 📊 ER Diagram
+### 🌟 Key Features
 
-The entity-relationship diagram outlining the core database structure:
+* **Student Management**: Add, view, edit, and manage student records
+* **Course Management**: Create and organize academic courses
+* **Enrollment System**: Track student-course relationships
+* **Responsive UI**: Clean, intuitive interface with modern design
+* **Data Visualization**: View relationships between students and courses
+
+---
+
+### 🚀 Getting Started
+
+#### 🛠️ Prerequisites
+
+* **Java 21** or higher
+* **Apache Maven** 3.6.3 or later
+* **IntelliJ IDEA** (recommended) or any Java IDE
+* **MySQL** 8.0+ (or your preferred database)
+
+#### 🏗️ Installation
+
+1. Clone the repository:
+
+   ```
+   git clone git@github.com:arjun-kshirsagar/bits-sga-dbms.git
+   cd bits-sga-dbms
+   ```
+
+2. Configure the database in `application.properties`:
+
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/enrolldb
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+   ```
+
+3. Build and run the application:
+
+   ```
+   mvn clean install
+   mvn spring-boot:run
+   ```
+
+4. Access the application at: `http://localhost:8080`
+
+---
+
+### 📊 Database Schema
+
+The application uses a relational database with the following structure:
 
 ![ER Diagram](./assets/ER_diagram.png)
 
 ---
 
-## 📁 File Structure
+### 🏗️ Project Structure
 
-```commandline
-enrollmate/
-├── assets/                          # Custom folder for images, files, etc., used across the app
+```
+bits-sga-dbms/
+├── assets/                          
 ├── mvnw                             
 ├── mvnw.cmd                         
 ├── pom.xml                          
@@ -76,9 +113,9 @@ enrollmate/
 
 ---
 
-## 🚀 Features & Operations
+### 🧾 Features & Operations
 
-> 💡 _For all the operations listed below, please refer to the screenshots in the [Testing](#-testing) section._
+#### Student Management
 
 ### 💾 Populate Database:
 Sql script has be written to automatically populate demo data when the application is started.
@@ -88,10 +125,7 @@ resources/
     - schema.sql
 ```
 
-### ✅ Create Operations
-- **Add Student**: `/students/add`
-- **Add Course**: `/courses/add`  
-  _See visual demonstrations in the Testing section._
+#### Course Management
 
 ### 📄 Read Operations
 - **List All Courses**: `/courses`
@@ -100,12 +134,10 @@ resources/
 - **List Students with Enrolled Courses**: `/students/with-courses`  
   _Screenshots are available in the Testing section._
 
-### 🔁 Update Operations
-- **Edit Course**: `/courses/edit/{id}`
-- **Edit Student**: `/students/edit/{id}`  
-  _Refer to the Testing section for before-and-after views._
+#### Sample Data
 
----
+Initial test data is automatically loaded from `data.sql` on application startup.
+
 
 ## 🧪 Testing
 
@@ -167,3 +199,11 @@ resources/
 | Manual testing of all operations     | ✅     |
 
 > ✅ **All major features from the assignment have been successfully implemented.**
+
+---
+
+### 🙏 Acknowledgments
+
+* Built with Spring Boot and Thymeleaf
+* Bootstrap for responsive design
+* Icons by [Font Awesome](https://fontawesome.com)
